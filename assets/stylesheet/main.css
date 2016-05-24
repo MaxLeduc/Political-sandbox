@@ -1,0 +1,816 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* font-size */
+body {
+  font-size: 62.5%;
+}
+
+/* colors*/
+/* selector styling */
+h1 {
+  font-size: 26px;
+  font-size: 2.6rem;
+  font-family: "Coming Soon", cursive;
+}
+
+h2 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-family: "Coming Soon", cursive;
+}
+
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Coming Soon", cursive;
+}
+
+h4 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: "Coming Soon", cursive;
+}
+
+h5 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "Coming Soon", cursive;
+}
+
+h6,
+p {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: "Coming Soon", cursive;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+body {
+  background: url("../images/pailpattern.png");
+  background-repeat: repeat;
+  color: #4978ff;
+}
+
+section.main-section {
+  margin: 150px 0 50px 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 90px;
+  position: relative;
+}
+
+.wrapper .white-box {
+  position: absolute;
+  top: -45px;
+  width: 70%;
+  text-align: center;
+  left: 15%;
+  color: white;
+  font-weight: bold;
+}
+
+.wrapper .hero-text {
+  padding: 20px;
+  background: rgba(242, 242, 242, 0.9);
+  border: 7px solid #ffdf4c;
+  color: #4978ff;
+}
+
+.wrapper .hero-text h1 {
+  margin: 10px 0;
+}
+
+.wrapper .hero-text h4 {
+  margin-bottom: 10px;
+}
+
+.sandbox {
+  border: 7px solid #ffdf4c;
+  background: #f2f2f2;
+}
+
+.quiz {
+  background: rgba(242, 242, 242, 0.9);
+  border: 7px solid #ffdf4c;
+}
+
+section.quiz-section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.sandbox {
+  width: calc(40% - 30px);
+  margin: 20px;
+  margin-right: 0;
+  background-image: url("../SVGs/noun_30514_cc.svg");
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sandbox .content {
+  visibility: hidden;
+}
+
+.regime-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.regime-description {
+  width: 100%;
+  padding: 20px;
+  background: #f2f2f2;
+}
+
+.regime-description h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.regime-description h3,
+.regime-description h4,
+.regime-description h6,
+.regime-description p {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0;
+  line-height: 1.6rem;
+}
+
+.regime-description h6 {
+  font-style: italic;
+}
+
+.regime-description p {
+  line-height: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.regime-description a {
+  text-decoration: none;
+}
+
+.regime-description .button-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.regime-description .read-more,
+.regime-description .reset {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: "Coming Soon", cursive;
+  font-weight: bold;
+}
+
+.regime-description .read-more {
+  background-color: #0fc47a;
+  border: 1px solid #0fc47a;
+}
+
+.regime-description .read-more:hover {
+  background-color: #12e891;
+}
+
+.regime-description .reset {
+  background-color: #ffdf4c;
+  border: 1px solid #ffdf4c;
+  margin-right: 20px;
+}
+
+.regime-description .reset:hover {
+  background-color: #ffe673;
+}
+
+.regime-description span {
+  font-weight: bold;
+  font-size: 23px;
+  font-size: 2.3rem;
+  font-family: "Coming Soon", cursive;
+}
+
+.quiz {
+  width: calc(60% - 30px);
+  margin: 20px;
+  padding: 20px;
+}
+
+.quiz h3 {
+  padding: 20px 0 0 0;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.quiz form fieldset {
+  border: none;
+  padding-top: 50px;
+}
+
+.quiz form fieldset h4 {
+  line-height: 2.5rem;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.quiz form label {
+  width: calc(50% - 4%);
+  margin: 0 2%;
+  min-height: 220px;
+  text-align: center;
+  display: block;
+  border: 5px solid #ffdf4c;
+  border-radius: 3px;
+  float: left;
+}
+
+.quiz form label input[type=radio] {
+  visibility: hidden;
+}
+
+.quiz form label p {
+  margin-top: 5px;
+}
+
+.quiz form .quiz form fieldset:last-child {
+  padding-bottom: 50px;
+}
+
+.quiz form .results {
+  margin: 0 10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: "Coming Soon", cursive;
+  color: white;
+  font-weight: bold;
+}
+
+.quiz form .results {
+  background-color: #4978ff;
+  border: 1px solid #4978ff;
+}
+
+.quiz form .results:hover {
+  background-color: #7095ff;
+}
+
+.quiz form .btn-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 20px;
+}
+
+label {
+  padding: 20px;
+}
+
+label svg {
+  width: 20%;
+  border: 1px solid #4978ff;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px auto;
+  display: block;
+  fill: #4978ff;
+}
+
+.repressionNo:hover,
+.powerMany:hover,
+.rotationYes:hover {
+  background-color: #12e891;
+  color: #f2f2f2;
+}
+
+.repressionNo:hover svg,
+.powerMany:hover svg,
+.rotationYes:hover svg {
+  fill: white;
+  border: 1px solid white;
+}
+
+.greenFill {
+  background-color: #0fc47a;
+  fill: white;
+  color: #fff;
+  border: 1px solid #0fc47a;
+  text-shadow: 1px 1px rgba(125, 125, 125, 0.9);
+  box-shadow: 1px 1px rgba(125, 125, 125, 0.9);
+}
+
+.greenFill svg {
+  border: 1px solid white;
+  box-shadow: 1px 1px rgba(125, 125, 125, 0.9);
+  fill: white;
+}
+
+.redFill {
+  background-color: #ff4447;
+  fill: white;
+  color: #fff;
+  border: 1px solid #ff4447;
+  text-shadow: 1px 1px rgba(125, 125, 125, 0.9);
+  box-shadow: 1px 1px rgba(125, 125, 125, 0.9);
+}
+
+.redFill svg {
+  border: 1px solid white;
+  box-shadow: 1px 1px rgba(125, 125, 125, 0.9);
+  fill: white;
+}
+
+.repressionYes:hover,
+.powerFew:hover,
+.rotationNo:hover {
+  background-color: #ff6b6e;
+  color: white;
+}
+
+.repressionYes:hover svg,
+.powerFew:hover svg,
+.rotationNo:hover svg {
+  fill: white;
+  border: 1px solid white;
+}
+
+.footerWrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 20px auto;
+  background-color: rgba(242, 242, 242, 0.9);
+  border: 7px solid #ffdf4c;
+}
+
+.footerWrapper p {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.footerWrapper .tag {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.footerWrapper .tag h6 {
+  font-size: 8px;
+  font-size: 0.8rem;
+  font-family: "Coming Soon", cursive;
+  padding: 15px 0 0 0;
+  font-style: italic;
+}
+
+.footerWrapper .footerContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footerWrapper .footerContainer div {
+  margin: 5px 2%;
+}
+
+.footerWrapper .tag span {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: "Coming Soon", cursive;
+}
+
+.footerWrapper .tag a {
+  color: #4978ff;
+}
+
+.footerWrapper .tag a:hover {
+  color: #0fc47a;
+}
+
+.footerWrapper .tag .fa {
+  padding: 0 10px;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  section.quiz-section {
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .quiz, .sandbox {
+    width: calc(100% - 30px);
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  section.main-section {
+    margin-top: 100px;
+  }
+  .wrapper .white-box {
+    top: -20px;
+    width: 80%;
+    left: 10%;
+  }
+  h1 {
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: "Coming Soon", cursive;
+  }
+  .quiz form label {
+    min-height: 250px;
+  }
+  .quiz form label {
+    width: calc(100% - 4%);
+    min-height: 200px;
+    float: none;
+    margin-bottom: 20px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 580px) {
+  .wrapper .white-box {
+    position: absolute;
+    top: -30px;
+    left: 6%;
+    width: 90%;
+  }
+  h1 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "Coming Soon", cursive;
+  }
+  h2 {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: "Coming Soon", cursive;
+  }
+  h3 {
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-family: "Coming Soon", cursive;
+  }
+  h4 {
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-family: "Coming Soon", cursive;
+  }
+  h6, p {
+    font-size: 10px;
+    font-size: 1rem;
+    font-family: "Coming Soon", cursive;
+  }
+  .regime-description h1,
+  .regime-description span {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "Coming Soon", cursive;
+  }
+  .regime-description h2 {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: "Coming Soon", cursive;
+  }
+  .regime-description h3 {
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-family: "Coming Soon", cursive;
+  }
+  .regime-description h4 {
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-family: "Coming Soon", cursive;
+  }
+  .regime-description h6, .regime-description p {
+    font-size: 10px;
+    font-size: 1rem;
+    font-family: "Coming Soon", cursive;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper svg {
+    display: none;
+  }
+  .wrapper .quiz form label {
+    min-height: 150px;
+    padding: 5px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper .quiz form fieldset {
+    padding: 0;
+  }
+  .wrapper .quiz form .btn-container {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper .sandbox {
+    background-size: 200px 200px;
+  }
+  .wrapper .regime-image {
+    display: none;
+  }
+  .regime-description h2 {
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-family: "Coming Soon", cursive;
+  }
+  .regime-description span {
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-family: "Coming Soon", cursive;
+  }
+  .footerWrapper .footerContainer {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerWrapper .footerContainer div {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .wrapper .white-box {
+    top: -60px;
+  }
+  .regime-description p {
+    display: none;
+  }
+  .regime-description .button-container {
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .regime-description .button-container .read-more {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .regime-description .button-container .reset {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

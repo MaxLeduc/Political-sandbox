@@ -1,0 +1,66 @@
+/* font-size */
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+
+$font:'Coming Soon', cursive;
+
+@mixin font-size($size-value){
+	font-size:$size-value * 1px;
+	font-size:($size-value/10) * 1rem;
+	font-family: $font;
+}
+
+body{
+	font-size:62.5%;
+}
+
+/* colors*/
+//Caitlin Colour Palette
+$green: rgb(15,196,122);
+$light-green: rgb(18, 232, 145);
+$red:rgb(255, 68, 71); 
+$light-red: rgb(255, 107, 110);
+$blue: rgb(73, 120, 255);
+$light-blue: rgb(112,149, 255);
+$yellow: rgb(255, 223, 76);
+$light-yellow: rgb(255,230,115);
+$yellow-trans: rgba(255, 223, 76, 0.7);
+$white: rgb(242, 242, 242);
+$white-trans: rgba(242, 242, 242, 0.9);
+
+
+
+// $green: rgb(61,255,54);
+// $light-green:rgb(99, 255, 93);
+$sand: rgb(214, 181, 95);
+// $red:rgb(255, 48, 33);
+// $light-red:rgb(255, 110, 99);
+// $blue: rgb(74, 93, 185);
+// $light-blue: rgb(93, 117,232);
+$brown:rgb(150, 111, 51);
+
+/* selector styling */
+
+h1 {
+	@include font-size(26);
+}
+
+h2 {
+	@include font-size(22);
+}
+
+h3 {
+	@include font-size(18);
+}
+
+h4{
+	@include font-size(16);
+}
+
+h5{
+	@include font-size(14);
+}
+
+h6,
+p{
+	@include font-size(12);
+}
